@@ -1,0 +1,18 @@
+.button-container {
+  a {
+    background: var(--secondaryColor);
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s;
+    padding: 12px 20px;
+    border-radius: 4px;
+
+    &:hover{
+    background: var(--primaryColor);
+    }
+  }
+
+  
+}
+

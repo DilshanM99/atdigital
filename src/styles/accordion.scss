@@ -1,0 +1,54 @@
+
+.accordion {
+  background: #faf8ff;
+  border: none;
+
+  .accordion-item {
+    border: none;
+    .accordion-header {
+      border: none;
+
+      .accordion-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-family: var(--interFont);
+        color: var(--black);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 2rem;
+        border: none;
+        background: transparent;
+
+        &:not(.collapsed) {
+            color: var(--primaryColor);
+        }
+        &:active{
+            color: var(--primaryColor);
+        }
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+
+        &:not(.collapsed)::after{
+            background-image: url('../assets/minus.png');
+        }
+
+        &::after{
+            position: absolute;
+            right: 0;
+            background-image: url('../assets/plus.png');
+        }
+      }
+    }
+    .accordion-body{
+        font-family: var(--interFont);
+        color: #6F6C90;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 2.1rem;
+    }
+  }
+  
+}

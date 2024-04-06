@@ -1,0 +1,23 @@
+.nav-container {
+  background: var(--primaryColor);
+  padding: 10px 80px;
+
+  .navbar {
+    .navbar-collapse {
+      justify-content: flex-end;
+      .nav-link {
+        font-family: var(--interFont);
+        color: var(--white);
+        text-transform: uppercase;
+        transition: 1s;
+        font-size: 14px;
+        gap: 28px;
+        &:hover {
+          color: var(--secondaryColor);
+        }
+      }
+    }
+  }
+}
+
+
